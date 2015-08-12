@@ -1,5 +1,6 @@
 <?php // get_template_part('templates/page', 'header'); ?>
 
+<section class="top">
 <?php if (!have_posts()) : ?>
 <div class="alert alert-warning">
 	<?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -12,13 +13,13 @@
 <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?>
-
+</section>
 <!-- Links & other resources -->
 <section class="resources clearfix">
 	<div class="container">
 		<h1>Resources</h1>
 
-		<div class="col-xs-6 col-md-6 typography">
+		<div class="col-sm-6 col-md-6 typography">
 			<h3>Typography </h3>
 			<ul>
 				<li>
@@ -61,7 +62,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="col-xs-6 col-md-6">
+		<div class="col-sm-6 col-md-6">
 			<div id="web-resources" class="resource-list">
 				<h3>Web Design</h3>
 				<ul>
